@@ -1,0 +1,606 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-snakktablet-portrait-only {
+  @media (min-width: 600px) and (max-width: 899px)  and (orientation: portrait) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-tablet-landscape-only {
+  @media (min-width: 900px) and (max-width: 1199px)  and (orientation: landscape) { @content; }
+}
+@mixin for-tablet-portrait-only {
+  @media (min-width: 900px) and (max-width: 1199px)  and (orientation: portrait) { @content; }
+}
+
+@mixin for-bigtablet-landscape-only {
+  @media (min-width: 1200px) and (max-width: 1800px)  and (orientation: landscape) { @content; }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-desktop-only {
+  @media (min-width: 1200px) and (max-width: 1799px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+@mixin for-iphone5 {
+  @media (max-width: 320px) { @content; }
+}
+
+@mixin for-slider{
+  @media (min-width: 320px) and (max-width: 1199px) and (orientation: portrait) {@content;}
+}
+
+@mixin for-display{
+  @media ( min-width: 800px) and (orientation: landscape) { @content; }
+}
+
+
+#section0 {
+  
+}
+
+#fanall {
+  @include for-tablet-portrait-up{
+    img{
+    height: 60%;
+    width: 60%;
+    }
+  }
+  @include for-tablet-landscape-up{
+    img{
+    height: 80%;
+    width: 80%;
+    }
+  }
+  @include for-tablet-landscape-only {
+    img {
+      height: 50%;
+      width: 50%;
+    }
+  }
+  @include for-bigtablet-landscape-only {
+    img {
+    height: 60%;
+    width: 60%;
+    }
+  }
+}
+
+
+#section0 {
+  
+  
+
+  @include for-phone-only { 
+    background-image: url(../images/bg-mobile/bg-1.jpg);
+  }
+  @include for-tablet-portrait-up {
+    background-image: url(../images/bg-mobile/bg-1.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  @include for-tablet-landscape-up {     
+    background-image: url(../images/bg/bg-1.jpg);     
+    background-size: cover;     
+    background-position: center center;   
+  }
+
+
+  @include for-tablet-landscape-only {
+    background-image: url(../images/bg/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  }
+  @include for-tablet-portrait-only {
+    background-image: url(../images/bg-mobile/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  }
+
+
+}
+
+.header {
+  @include for-phone-only {
+    .logo > img{
+      height: 60%;
+      width: 60%;
+    }
+    .dropbtn {
+      padding-top:0px;
+      padding-right: 10px;
+
+    }
+    .dropdown-content {
+      min-width: 195px;
+    }
+    .dropdown-content a {
+      font-size: 14px;
+    }
+  }
+
+  @include for-tablet-portrait-only {
+
+
+    .dropbtn{
+      font-size: 45px;
+    }
+    .dropdown-content{
+      min-width: 500px;
+    }
+    .dropdown-content a {
+      padding-bottom: 18px;
+      font-size: 40px;
+    }
+
+    .dropdown-content a >img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+  @include for-tablet-landscape-up{
+
+
+      .dropbtn {
+        font-size: 45px;
+        }
+      }
+
+}
+
+
+#slogan {
+
+    @include for-phone-only {
+      position: static;
+      text-align: center;
+      padding-top: 20px;
+
+      h1 {
+        font-weight: bold;
+        font-size: 30px;
+      }
+    }
+
+    @include for-iphone5 {
+      padding-top: 15px;
+      h1 {
+        font-size: 25px;
+      }
+    }
+
+    @include for-tablet-portrait-up {
+      position: static;
+      text-align: center;
+      padding-top: 10px;
+
+      h1 {
+        font-weight: bold;
+        font-size: 50px;
+      }
+    }
+
+     @include for-tablet-landscape-up{
+      h1 {
+        font-weight: bold;
+        font-size: 70px;
+      }
+     }
+     @include for-tablet-landscape-only {
+      position: absolute;
+      left: 18%;
+      top: 10%;
+      h1 {
+        font-weight: bold;
+        font-size: 50px;
+      }
+     }
+     @include for-desktop-up{
+      position: absolute;
+     }
+}
+
+#rewardtitle {
+  @include for-phone-only {
+    position: absolute;
+    top: 112%;
+    .rwd-break {
+      display: block;
+    }
+    img{
+      width: 300px;
+      height: auto;
+    }
+    h1 {
+
+      font-size: 20px;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    h3 {
+      margin-top: 8px;
+      font-size:15px;
+      line-height: 20px;
+    }
+  }
+
+  @include for-snakktablet-portrait-only {
+
+    h1 {
+      font-size: 37px;
+      margin-bottom: 5px;
+    }
+    h3 {
+      line-height: 32px;
+      margin-top: 0px;
+    }
+    .rwd-break {
+      display: block;
+    }
+    top:110%;
+
+  }
+  @include for-tablet-portrait-only {
+    h1 {
+      font-size: 60px;
+      margin-bottom: 5px;
+    }
+    h3 {
+      font-size: 50px;
+      line-height: 60px;
+      margin-top: 0px;
+    }
+    .rwd-break {
+      display: block;
+    }
+    top:110%;
+    width:80%;
+  }
+   @include for-tablet-landscape-only {
+    width: 80%;
+   }
+
+   @include for-bigtablet-landscape-only {
+    width: 80%;
+   }
+
+}
+
+
+#rewarddetail {
+  @include for-slider{
+    display: none;
+  }
+
+  @include for-tablet-landscape-only {
+    width: 80%;
+    height: 65%;
+  }
+  @include for-bigtablet-landscape-only {
+    width: 80%;
+  }
+}
+
+#rewarddetail-mobile {
+   @include for-slider {
+    display: block; 
+   }
+}
+
+
+
+
+#rewardtitle h1 {
+  @include for-iphone5 {
+    font-size: 15px;
+  }
+  @include for-tablet-landscape-only {
+    font-size: 45px;
+    margin-top: 5px;
+
+  }
+}
+
+
+#rewardtitle h3 {
+  @include for-iphone5 {
+    margin-top: 2px;
+  }
+   @include for-tablet-landscape-only {
+    font-size: 20px;
+   }
+}
+
+#rewarddetail > #goal h4 {
+  @include for-tablet-landscape-only {
+    font-size: 19px;
+  }
+}
+
+#specialrewarddetail h2 {
+  @include for-tablet-landscape-only {
+    margin-top: 0px;
+    font-size: 28px;
+  }
+  @include for-bigtablet-landscape-only{
+    font-size: 40px;
+  }
+
+
+}
+
+
+#rewarddetail-mobile > #goal-mobile h4 {
+
+  @include for-snakktablet-portrait-only{
+    font-size: 25px;
+  }
+  @include for-tablet-portrait-only {
+    font-size: 35px;
+  }
+  @include for-iphone5 {
+    font-size: 10px;
+  }
+  
+}
+
+.carousel-inner > .item > .reward-mobile {
+  @include for-iphone5 {
+    width: 200px;
+    height: 200px;
+  }
+
+  @include for-snakktablet-portrait-only {
+    height:400px;
+    width: 400px;
+  }
+
+  @include for-tablet-portrait-only {
+    height:550px;
+    width: 550px;
+  }
+}
+
+
+.carousel-caption {
+  @include for-snakktablet-portrait-only {
+    bottom: -100px;
+  }
+  @include for-tablet-portrait-only {
+    bottom: -117px;
+  }
+   
+}
+
+.carousel-caption .number {
+  @include for-iphone5 {
+    font-size: 30px;
+  }
+  @include for-snakktablet-portrait-only {
+    font-size: 50px;
+  }
+  @include for-tablet-portrait-only {
+    font-size: 60px;
+  }
+
+}
+
+.carousel-caption .type {
+  @include for-snakktablet-portrait-only {
+    font-size: 20px;
+  } 
+  @include for-tablet-portrait-only {
+    font-size: 30px;
+  }
+}
+
+.carousel-caption .model {
+  @include for-snakktablet-portrait-only {
+    font-size: 20px;
+  } 
+  @include for-tablet-portrait-only {
+    font-size: 30px;
+    white-space: nowrap;
+  }
+}
+
+
+
+
+.round5-mobile {
+  @include for-iphone5 {
+    width: 135px;
+  }
+  @include for-snakktablet-portrait-only {
+    height: 50px;
+    width: 240px;
+    font-size: 22px;
+    padding-right: 30px;
+    padding-top: 5px;
+  }
+  @include for-tablet-portrait-only {
+    height: 60px;  
+    width: 300px;
+    font-size: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+  }
+}
+
+
+.round4-mobile {
+  @include for-iphone5 {
+    width: 135px;
+  }
+  @include for-snakktablet-portrait-only {
+    height: 50px;
+    width: 220px;
+    font-size: 22px;
+    padding-right: 30px;
+    padding-top: 5px;
+  }
+  @include for-tablet-portrait-only {
+    height: 60px;  
+    width: 280px;
+    font-size: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+  }
+}
+
+
+.round3-mobile {
+  @include for-iphone5 {
+    width: 135px;
+    padding-right: 8px;
+  }
+  @include for-snakktablet-portrait-only {
+    height: 50px;
+    width: 240px;
+    font-size: 22px;
+    padding-right: 30px;
+    padding-top: 5px;
+  }
+  @include for-tablet-portrait-only {
+    height: 60px;  
+    width: 280px;
+    font-size: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+  }
+
+
+}
+
+
+.carousel-inner > .item > .loa{
+  @include for-tablet-portrait-only
+  {
+  height: 450px;
+  width: 450px;
+}
+}
+
+.multilinecaption {
+  @include for-snakktablet-portrait-only {
+    bottom: -114px;
+    line-height: 26px;
+  }
+  @include for-tablet-portrait-only {
+    bottom: -170px;
+  }
+}
+
+
+.round2-mobile {
+  @include for-iphone5 {
+    width: 135px;
+    padding-right: 8px;
+  }
+}
+
+.landscaperewardcaption {
+  @include for-iphone5 {
+    bottom: -70px;
+  }
+  @include for-snakktablet-portrait-only {
+    bottom: -15px;
+  }
+  @include for-tablet-portrait-only {
+    bottom: 20px;
+  }
+}
+
+
+
+.round2-mobile {
+  @include for-snakktablet-portrait-only {
+    height: 50px;
+    width: 240px;
+    font-size: 22px;
+    padding-right: 30px;
+    padding-top: 5px;
+  }
+
+  @include for-tablet-portrait-only {
+    height: 60px;
+    width: 280px;
+    font-size: 25px;
+    padding-right: 30px;
+    padding-top: 8px;
+    top: 33%;
+  }
+
+}
+
+
+.carousel-inner > .item > .landscapereward > img {
+  @include for-snakktablet-portrait-only {
+    padding-top: 130px;
+  }
+  @include for-tablet-portrait-only {
+     padding-top: 130px;
+  }
+}
+
+
+.round1-mobile {
+  @include for-snakktablet-portrait-only {
+    font-size: 22px;
+    height: 40px;
+  }
+  @include for-tablet-portrait-only {
+    font-size: 22px;
+    height: 40px;
+  }
+
+}
+
+.carousel-inner > .item > .biggest > img {
+  @include for-snakktablet-portrait-only {
+    padding-top: 40px;
+  }
+}
+
+
+#specialrewarddetail-mobile h2 {
+@include for-snakktablet-portrait-only {
+    font-size: 40px;
+  }
+@include for-tablet-portrait-only {
+  font-size: 52px;
+  }
+}
+
+.carousel-inner > .item > .special > img {
+  @include for-tablet-portrait-only {
+    width: 108%;
+  }
+}
+
+#eiffel {
+  @include for-tablet-landscape-only {
+    left: 55%;
+    top: 60%;
+  }
+}
+
+
+#eiffel img {
+  @include for-tablet-landscape-only {
+    width: 105%;
+  }
+
+}

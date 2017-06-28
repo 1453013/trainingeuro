@@ -1,0 +1,854 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'iCielSamsungSharpSans-Bold';
+   	src: url('https://cdn.samsung.com/etc/designs/smg/vn/font/SamsungSharpSans-Bold-UTF8.woff2') format('woff2'), 
+    url('https://cdn.samsung.com/etc/designs/smg/vn/font/SamsungSharpSans-Bold-UTF8.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+@font-face {
+	font-family: 'SamsungOne';
+	src: url(../fonts/SamsungOne-600C.eot);
+	src: url(../fonts/SamsungOne-600C.ttf) format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SamsungOne';
+	src: url(../fonts/SamsungOne-800C.eot);
+	src: url(../fonts/SamsungOne-800C.ttf) format("truetype");
+	font-weight: 800;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'SamsungOne';
+	src: url(../fonts/SamsungOne-400.eot);
+	src: url(../fonts/SamsungOne-400.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SamsungOne';
+	src: url(../fonts/SamsungOne-200.eot);
+	src: url(../fonts/SamsungOne-200.ttf) format("truetype");
+	font-weight: 200;
+	font-style: normal;
+}
+
+			 
+
+html {
+	position: relative;
+}
+
+
+h1 {
+	
+}
+
+#rewarddetail-mobile {
+	display: none;
+}
+#slogan {
+	position: absolute;
+	left: 18%;
+	top: 9%;
+}
+
+#slogan > h1 {
+	font-family: 'SamsungOne';
+	font-weight: 600;
+	color: #064cab;
+	font-size: 80px;
+}
+
+#section0 {
+	background-image: url(../images/bg/bg-1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+}
+
+#section1{
+	background-image: url(../images/bg/bg-2.jpg);
+	background-size:     cover; 
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.header {
+	.logo {
+		padding-top: 25px;
+		padding-left: 25px;
+		display: inline-block;
+		position: relative;
+		}
+	.dropbtn {
+
+	    background-color: transparent;
+	    color: #0050a2;
+	    padding: 16px;
+	    font-size: 30px;
+	    border: none;
+	    cursor: pointer;
+	}
+
+	.white {
+		color: white;
+	}
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    right: 0;
+	    background-color: white;
+	    opacity: 0.7;
+	    min-width: 280px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	    border-top-left-radius: 15px;
+	    border-bottom-left-radius: 15px;
+	    text-align: right;
+	    white-space: nowrap !important;
+	}
+
+	.menu {
+		position: relative;
+    	display: inline-block;
+		float: right;
+		padding-top: 10px;
+		padding-right: 10px;
+	}
+
+	.dropdown-content a {
+		font-size: 22px;
+	    color: #0051b1;
+	    padding: 12px 10px;
+	    text-decoration: none;
+	    display: block;
+	}
+
+	.dropdown-content a:hover {
+		background-color: #f1f1f1;
+		color: #2058a2;
+		font-weight: bold;
+	}
+
+	.dropdown-content a > img{
+		opacity: 0;
+		height: 20px;
+		width: 20px;
+	}
+
+
+	.dropdown-content a:hover img {
+		opacity: 1;
+	}
+
+
+	.dropdown-content a > img:hover{
+	}
+
+
+	.dropdown-content a.first:hover {
+
+		border-top-left-radius: 15px;
+
+	}
+
+	.dropdown-content a.last:hover {
+		border-bottom-left-radius: 15px;	
+	}
+
+	.menu:hover .dropdown-content {
+	    display: block;
+	}
+
+	.menu:hover .dropbtn {
+	    background-color: transparent;
+	}
+
+
+}
+
+#fanall {
+	position: absolute;
+	bottom:0;
+}
+
+#fanall img{
+	height: 75%;
+	width: 75%;
+}
+
+
+
+
+#rewardtitle {
+	color: white;
+	position: fixed;
+	top: 105%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translateX(-50%);
+
+
+  text-align: center;
+  font-family: 'SamsungOne';
+  font-weight: 400;
+  .rwd-break {
+  	display: none;
+  }
+}
+
+#rewardtitle h1 {
+	font-size: 60px
+}
+
+#rewardtitle h3 {
+	font-size: 30px;
+	line-height: 0px;
+}
+
+/*#rewarddetail {
+	background-color: #042351;
+	width: 50%;
+  	height: 60%;
+  	padding-bottom: 30px;
+}*/
+
+#rewarddetail {
+	position: fixed;
+	background-color: #042351;
+	opacity: 0.8;
+	border-radius: 20px;
+	top: 130%;
+  	left: 50%;
+  	width: 50%;
+  	height: 60%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#rewarddetail >  #goal h4{
+
+	color: white;
+	font-family: 'SamsungOne';
+  	font-weight: 400;
+  	font-size: 22px;
+
+}
+
+#rewarddetail {
+	#round53{
+		width: 30%;
+	}
+	#round42{
+		width: 30%;
+	}
+	#round1{
+		width: 40%;
+	}
+}
+
+.button-bg-half {
+	position: absolute;
+	margin-left: -20px;
+	z-index: -1;
+	display: inline-block;
+	background-image: url(../images/slide-reward/button-bg-half.png);
+	background-size: 100% 100%;
+    background-repeat:   no-repeat;
+    height: 38px;
+    width: 147px;
+    color: white;
+	font-family: 'SamsungOne';
+	font-weight: 400;
+    text-align: center;
+	vertical-align: middle;
+	line-height: 38px;    
+
+}
+
+.button-bg {
+	background-image: url(../images/slide-reward/button-bg.png);
+	background-size: 100% 100%;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+	font-family: 'SamsungOne';
+	font-weight: 400;
+    text-align: center;
+	vertical-align: middle;
+	line-height: 38px;  
+}
+
+
+#round53 {
+	text-align: left;
+	transform: translateX(10%);
+}
+#round5 {
+	img {
+	height: 149px;
+	width: 77px;
+	vertical-align: top;
+	text-align: left;
+	}
+	.amount {
+		text-align: left;
+		position: absolute;
+		color: white;
+		padding-left: 20px;
+		padding-top: 35px;
+		display: inline-block;
+
+		.number {
+			font-size: 30px;
+		}
+
+
+	}
+}
+
+
+#round3 {
+	padding-top: 20px;
+	img {
+	height: 143px;
+	width: 70px;
+	vertical-align: top;
+	}
+	.amount {
+		position: absolute;
+		color: white;
+		padding-left: 20px;
+		padding-top: 60px;
+		display: inline-block;
+		text-align: left;
+
+		.number {
+			font-size: 30px;
+		}
+	}
+}
+
+
+#round42 {
+	text-align: center;
+	transform: translateX(-10%);
+}
+#round4 {
+	img {
+	height: 146px;
+	width: 73px;
+	vertical-align: top;
+	text-align: left;
+	}
+	.amount {
+		text-align: left;
+		position: absolute;
+		color: white;
+		padding-left: 20px;
+		padding-top: 35px;
+		display: inline-block;
+
+		.number {
+			font-size: 30px;
+		}
+	}
+}
+
+
+#round2 {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	img {
+	width: 220px;
+	vertical-align: top;
+	}
+	.amount {
+		position: absolute;
+		left: 20%;
+		color: white;
+		text-align: left;
+		display: block;
+
+		.number {
+			font-size: 30px;
+			line-height: 40px;
+		}
+	}
+	.button-bg-half {
+		margin-left: -88px;
+	}
+
+	.amount {
+		text-align: center;
+		width: 200px;
+	}
+}
+
+#round1{
+	img {
+		padding-top: 10px;
+		height: 179px;
+		width: 250px;	
+
+	}
+	.amount {
+
+		color: white;
+		.number {
+			font-size: 30px;
+		}
+	}
+}
+
+
+#specialrewarddetail {
+	text-align: left;
+	padding-left: 50px;
+	padding-top: 20px;
+
+}
+
+#specialrewarddetail h2 {
+	font-size: 32px;
+	color: white;
+	font-family: 'SamsungOne';
+	font-weight: 200;
+
+}
+
+
+#eiffel {
+	position: absolute;
+	left: 50%;
+	top: 45%;
+}
+
+
+#eiffel img{
+	height: auto;
+	width: 120%;
+}
+
+
+#rewarddetail-mobile {
+	position: fixed;
+	background-color: #042351;
+	opacity: 0.8;
+	border-radius: 20px;
+	top: 135%;
+  	left: 50%;
+  	width: 80%;
+  	height: 60%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#rewarddetail-mobile >  #goal-mobile h4{
+
+	color: white;
+	font-family: 'SamsungOne';
+  	font-weight: 400;
+  	font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.carousel-inner {
+	height: 50%;
+}
+.carousel-inner >.item> .reward-mobile {
+	padding-top: 10px;
+	width: 225px;
+	height: 225px;	
+	margin:0 auto;
+}
+.carousel-inner >.item> .reward-mobile >img {
+	height: 100%;
+}
+
+.carousel-caption {
+	padding-bottom: 0;
+	bottom:-80px;
+	.number {
+		font-size: 40px;
+	}
+	.type {
+		font-weight: bold;
+	}
+	.model {
+		font-weight: bold;
+	}
+}
+
+.multilinecaption {
+	bottom:-95px;
+}
+
+.carousel-inner >.item> .landscapereward >img {
+	padding-top: 70px;
+	width: 100%;
+	height: auto;
+}
+
+.landscaperewardcaption {
+	bottom:-50px;
+}
+
+
+.carousel-inner >.item> .biggest >img {
+	padding-top: 40px;
+	width: 100%;
+	height: auto;
+}
+
+.carousel-control {
+	bottom: 50%;
+    /* top: -50%; */
+}
+
+
+.round5-mobile {
+	top:10%;
+	left: 55%;
+	width: 140px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+
+.round4-mobile {
+	top:10%;
+	left: 55%;
+	width: 140px;
+	text-align: right;
+	padding-right: 18px;
+}
+
+.round3-mobile {
+	top:10%;
+	left: 55%;
+	width: 150px;
+	text-align: right;
+	padding-right: 15px;
+}
+
+.round2-mobile {
+	top:40%;
+	left: 55%;
+	width: 150px;
+	text-align: right;
+	padding-right: 15px;
+}
+
+
+.round1-mobile {
+	position: absolute;
+	height: auto;
+	transform: translateX(50%);
+	top:0%
+
+}
+
+
+#specialrewarddetail-mobile h2 {
+	font-family: 'SamsungOne';
+	font-weight: 200;
+	color: white;
+	font-size: 20px;
+}
+
+
+.carousel-inner >.item> .special >img {
+	width: 100%;
+	height: auto;
+}
+
+/*.carousel-inner >.item {
+	transition: 3s;
+	}*/
+
+
+
+/*.banner > img {
+	  display:block;
+    margin:auto;
+}
+
+
+#eventtime h1, h3{
+	color: white;
+	font-family: 'SamsungOne';
+	font-weight: 600;
+	text-align: center;
+	line-height: 30px;
+
+}
+
+#eventtime h1 {
+	font-size: 70px;
+}
+
+#eventtime h3 {
+	font-size: 30px;
+}
+
+
+#reward h2 {
+	color: white;
+	font-family: 'SamsungOne';
+	font-weight: 600;
+	text-align: center;
+}
+
+
+#reward {
+	opacity: 0.8;
+	margin:0 auto ;
+	background-color: #032250;
+	width: 60%;
+	height: 20%;
+	border-radius: 30px;
+
+}
+
+.number , .type, .model {
+	color: white;
+}
+
+.number {
+	font-size: 40px;
+	text-align: left;
+}
+
+#round5 {
+	padding-left: 40px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	img {
+	height: 25%;
+	width: 25%;
+	vertical-align: top;
+	}
+	h4 {
+	color: white;
+	}
+	h3 {
+		font-size: 40px;
+		text-align: left;
+	}
+	.amount {
+		padding-left: 10px;
+		padding-top: 30px;
+		display: inline-block;
+	}
+}
+
+#round4 {
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	display: block;
+	margin-left: 50px;
+	img {
+	height: 25%;
+	width: 25%;
+	vertical-align: top;
+	}
+	h4 {
+	color: white;
+	}
+	h3 {
+		font-size: 40px;
+		text-align: left;
+	}
+
+	.amount {
+		padding-left: 10px;
+		padding-top: 30px;
+		display: inline-block;
+	}
+}
+
+#round3 {
+
+	padding-left: 40px;
+
+
+
+	img {
+	height: 25%;
+	width: 25%;
+	vertical-align: top;
+	}
+	h4 {
+	color: white;
+	}
+	h3 {
+		font-size: 40px;
+		text-align: left;
+	}
+	.amount {
+		padding-left: 10px;
+		padding-top: 30px;
+		display: inline-block;
+	}
+}
+
+
+#round2 {
+	margin: 0 auto;
+	img {
+	height: 60%;
+	width: 60%;
+	vertical-align: top;
+
+	}
+	h4 {
+		text-align: center;
+	color: white;
+	display: inline;
+	line-height: 0px;
+	}
+	h3 {
+		text-align: center;
+		display: inline;
+		font-size: 40px;
+		text-align: left;
+	}
+	.button-bg-half{
+	 margin-left: -20%;
+	}
+	.amount {
+		text-align: center;
+		white-space: nowrap;
+		padding-left: 10px;
+		display: inline-block;
+	}
+
+}
+	
+
+
+#round1 {
+	padding-right:40px;
+	padding-top: 20px;
+	img{
+		padding-top: 5px;
+	}
+	h4 {
+	color: white;
+	}
+	h3 {
+		font-size: 40px;
+	}
+	.amount {
+
+		margin: 0 auto;
+		text-align: center;
+		padding-top: -10px;
+		display: inline-block;
+	}
+}
+
+.button-bg-half {
+	position: absolute;
+	margin-left: -20px;
+	z-index: -1;
+	display: inline-block;
+	background-image: url(../images/slide-reward/button-bg-half.png);
+	background-size: 100% 100%;
+    background-repeat:   no-repeat;
+    height: 38px;
+    width: 147px;
+    color: white;
+	font-family: 'SamsungOne';
+	font-weight: 800;
+    text-align: center;
+	vertical-align: middle;
+	line-height: 38px;    
+
+}
+
+
+.button-bg {
+	background-image: url(../images/slide-reward/button-bg.png);
+	background-size: 100% 100%;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+	font-family: 'SamsungOne';
+	font-weight: 800;
+    text-align: center;
+	vertical-align: middle;
+	line-height: 38px;  
+}
+
+
+#round1 img {
+	display: block;
+	margin: 0 auto;
+}
+
+#round1 h4 {
+	text-align: center;
+	color: white;
+}
+
+#specialreward {
+	padding-left: 60px;
+}
+
+#specialreward h2{
+	letter-spacing: 3px;
+	font-size: 30px;
+	font-family: 'SamsungOne';
+	font-weight: 600;
+
+	text-align: left;
+}
+
+#eiffel{
+	position: absolute;
+	bottom: -20%;
+}
+
+
+#eiffel img {
+}
+#specialreward, #eiffel{
+	display: inline-block;
+}
+
+#france {
+	position: relative;
+	top:-50%;
+	display: block;
+	margin: 0 auto; 
+}*/

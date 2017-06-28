@@ -1,0 +1,391 @@
+@media (min-width: 600px) {
+  #fanall img {
+    height: 60%;
+    width: 60%; } }
+@media (min-width: 900px) {
+  #fanall img {
+    height: 80%;
+    width: 80%; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
+  #fanall img {
+    height: 50%;
+    width: 50%; } }
+@media (min-width: 1200px) and (max-width: 1800px) and (orientation: landscape) {
+  #fanall img {
+    height: 60%;
+    width: 60%; } }
+
+@media (max-width: 599px) {
+  #section0 {
+    background-image: url(../images/bg-mobile/bg-1.jpg); } }
+@media (min-width: 600px) {
+  #section0 {
+    background-image: url(../images/bg-mobile/bg-1.jpg);
+    background-size: cover;
+    background-position: center center; } }
+@media (min-width: 900px) {
+  #section0 {
+    background-image: url(../images/bg/bg-1.jpg);
+    background-size: cover;
+    background-position: center center; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
+  #section0 {
+    background-image: url(../images/bg/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  #section0 {
+    background-image: url(../images/bg-mobile/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; } }
+
+@media (max-width: 599px) {
+  .header .logo > img {
+    height: 60%;
+    width: 60%; }
+  .header .dropbtn {
+    padding-top: 0px;
+    padding-right: 10px; }
+  .header .dropdown-content {
+    min-width: 195px; }
+  .header .dropdown-content a {
+    font-size: 14px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .header .dropbtn {
+    font-size: 45px; }
+  .header .dropdown-content {
+    min-width: 500px; }
+  .header .dropdown-content a {
+    padding-bottom: 18px;
+    font-size: 40px; }
+  .header .dropdown-content a > img {
+    height: 30px;
+    width: 30px; } }
+@media (min-width: 900px) {
+  .header .dropbtn {
+    font-size: 45px; } }
+
+@media (max-width: 599px) {
+  #slogan {
+    position: static;
+    text-align: center;
+    padding-top: 20px; }
+    #slogan h1 {
+      font-weight: bold;
+      font-size: 30px; } }
+@media (max-width: 320px) {
+  #slogan {
+    padding-top: 15px; }
+    #slogan h1 {
+      font-size: 25px; } }
+@media (min-width: 600px) {
+  #slogan {
+    position: static;
+    text-align: center;
+    padding-top: 10px; }
+    #slogan h1 {
+      font-weight: bold;
+      font-size: 50px; } }
+@media (min-width: 900px) {
+  #slogan h1 {
+    font-weight: bold;
+    font-size: 70px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
+  #slogan {
+    position: absolute;
+    left: 18%;
+    top: 10%; }
+    #slogan h1 {
+      font-weight: bold;
+      font-size: 50px; } }
+@media (min-width: 1200px) {
+  #slogan {
+    position: absolute; } }
+
+@media (max-width: 599px) {
+  #rewardtitle {
+    position: absolute;
+    top: 112%; }
+    #rewardtitle .rwd-break {
+      display: block; }
+    #rewardtitle img {
+      width: 300px;
+      height: auto; }
+    #rewardtitle h1 {
+      font-size: 20px;
+      margin-top: 15px;
+      margin-bottom: 5px; }
+    #rewardtitle h3 {
+      margin-top: 8px;
+      font-size: 15px;
+      line-height: 20px; } }
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  #rewardtitle {
+    top: 110%; }
+    #rewardtitle h1 {
+      font-size: 37px;
+      margin-bottom: 5px; }
+    #rewardtitle h3 {
+      line-height: 32px;
+      margin-top: 0px; }
+    #rewardtitle .rwd-break {
+      display: block; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  #rewardtitle {
+    top: 110%;
+    width: 80%; }
+    #rewardtitle h1 {
+      font-size: 60px;
+      margin-bottom: 5px; }
+    #rewardtitle h3 {
+      font-size: 50px;
+      line-height: 60px;
+      margin-top: 0px; }
+    #rewardtitle .rwd-break {
+      display: block; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
+  #rewardtitle {
+    width: 80%; } }
+@media (min-width: 1200px) and (max-width: 1800px) and (orientation: landscape) {
+  #rewardtitle {
+    width: 80%; } }
+
+@media (min-width: 320px) and (max-width: 1199px) and (orientation: portrait) {
+  #rewarddetail {
+    display: none; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
+  #rewarddetail {
+    width: 80%;
+    height: 65%; } }
+@media (min-width: 1200px) and (max-width: 1800px) and (orientation: landscape) {
+  #rewarddetail {
+    width: 80%; } }
+
+@media (min-width: 320px) and (max-width: 1199px) and (orientation: portrait) {
+  #rewarddetail-mobile {
+    display: block; } }
+
+@media (max-width: 320px) {
+  #rewardtitle h1 {
+    font-size: 15px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
+  #rewardtitle h1 {
+    font-size: 45px;
+    margin-top: 5px; } }
+
+@media (max-width: 320px) {
+  #rewardtitle h3 {
+    margin-top: 2px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
+  #rewardtitle h3 {
+    font-size: 20px; } }
+
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
+  #rewarddetail > #goal h4 {
+    font-size: 19px; } }
+
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
+  #specialrewarddetail h2 {
+    margin-top: 0px;
+    font-size: 28px; } }
+@media (min-width: 1200px) and (max-width: 1800px) and (orientation: landscape) {
+  #specialrewarddetail h2 {
+    font-size: 40px; } }
+
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  #rewarddetail-mobile > #goal-mobile h4 {
+    font-size: 25px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  #rewarddetail-mobile > #goal-mobile h4 {
+    font-size: 35px; } }
+@media (max-width: 320px) {
+  #rewarddetail-mobile > #goal-mobile h4 {
+    font-size: 10px; } }
+
+@media (max-width: 320px) {
+  .carousel-inner > .item > .reward-mobile {
+    width: 200px;
+    height: 200px; } }
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  .carousel-inner > .item > .reward-mobile {
+    height: 400px;
+    width: 400px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .carousel-inner > .item > .reward-mobile {
+    height: 550px;
+    width: 550px; } }
+
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  .carousel-caption {
+    bottom: -100px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .carousel-caption {
+    bottom: -117px; } }
+
+@media (max-width: 320px) {
+  .carousel-caption .number {
+    font-size: 30px; } }
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  .carousel-caption .number {
+    font-size: 50px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .carousel-caption .number {
+    font-size: 60px; } }
+
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  .carousel-caption .type {
+    font-size: 20px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .carousel-caption .type {
+    font-size: 30px; } }
+
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  .carousel-caption .model {
+    font-size: 20px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .carousel-caption .model {
+    font-size: 30px;
+    white-space: nowrap; } }
+
+@media (max-width: 320px) {
+  .round5-mobile {
+    width: 135px; } }
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  .round5-mobile {
+    height: 50px;
+    width: 240px;
+    font-size: 22px;
+    padding-right: 30px;
+    padding-top: 5px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .round5-mobile {
+    height: 60px;
+    width: 300px;
+    font-size: 30px;
+    padding-right: 30px;
+    padding-top: 10px; } }
+
+@media (max-width: 320px) {
+  .round4-mobile {
+    width: 135px; } }
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  .round4-mobile {
+    height: 50px;
+    width: 220px;
+    font-size: 22px;
+    padding-right: 30px;
+    padding-top: 5px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .round4-mobile {
+    height: 60px;
+    width: 280px;
+    font-size: 30px;
+    padding-right: 30px;
+    padding-top: 10px; } }
+
+@media (max-width: 320px) {
+  .round3-mobile {
+    width: 135px;
+    padding-right: 8px; } }
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  .round3-mobile {
+    height: 50px;
+    width: 240px;
+    font-size: 22px;
+    padding-right: 30px;
+    padding-top: 5px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .round3-mobile {
+    height: 60px;
+    width: 280px;
+    font-size: 30px;
+    padding-right: 30px;
+    padding-top: 10px; } }
+
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .carousel-inner > .item > .loa {
+    height: 450px;
+    width: 450px; } }
+
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  .multilinecaption {
+    bottom: -114px;
+    line-height: 26px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .multilinecaption {
+    bottom: -170px; } }
+
+@media (max-width: 320px) {
+  .round2-mobile {
+    width: 135px;
+    padding-right: 8px; } }
+
+@media (max-width: 320px) {
+  .landscaperewardcaption {
+    bottom: -70px; } }
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  .landscaperewardcaption {
+    bottom: -15px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .landscaperewardcaption {
+    bottom: 20px; } }
+
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  .round2-mobile {
+    height: 50px;
+    width: 240px;
+    font-size: 22px;
+    padding-right: 30px;
+    padding-top: 5px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .round2-mobile {
+    height: 60px;
+    width: 280px;
+    font-size: 25px;
+    padding-right: 30px;
+    padding-top: 8px;
+    top: 33%; } }
+
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  .carousel-inner > .item > .landscapereward > img {
+    padding-top: 130px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .carousel-inner > .item > .landscapereward > img {
+    padding-top: 130px; } }
+
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  .round1-mobile {
+    font-size: 22px;
+    height: 40px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .round1-mobile {
+    font-size: 22px;
+    height: 40px; } }
+
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  .carousel-inner > .item > .biggest > img {
+    padding-top: 40px; } }
+
+@media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
+  #specialrewarddetail-mobile h2 {
+    font-size: 40px; } }
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  #specialrewarddetail-mobile h2 {
+    font-size: 52px; } }
+
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
+  .carousel-inner > .item > .special > img {
+    width: 108%; } }
+
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
+  #eiffel {
+    left: 55%;
+    top: 60%; } }
+
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
+  #eiffel img {
+    width: 105%; } }
+
+/*# sourceMappingURL=style.css.map */
