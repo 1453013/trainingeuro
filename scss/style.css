@@ -111,22 +111,29 @@
     #rewardtitle .rwd-break {
       display: block; }
     #rewardtitle img {
-      width: 300px;
+      width: 210px;
       height: auto; }
     #rewardtitle h1 {
-      font-size: 20px;
+      font-size: 17px;
       margin-top: 15px;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      white-space: nowrap; }
     #rewardtitle h3 {
       margin-top: 8px;
       font-size: 15px;
       line-height: 20px; } }
+@media (max-width: 599px) {
+  #rewardtitle img {
+    width: 270px; }
+  #rewardtitle h1 {
+    white-space: nowrap; } }
 @media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
   #rewardtitle {
     top: 110%; }
     #rewardtitle h1 {
       font-size: 37px;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      white-space: nowrap; }
     #rewardtitle h3 {
       line-height: 32px;
       margin-top: 0px; }
@@ -138,7 +145,8 @@
     width: 80%; }
     #rewardtitle h1 {
       font-size: 60px;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      white-space: nowrap; }
     #rewardtitle h3 {
       font-size: 50px;
       line-height: 60px;
@@ -170,6 +178,11 @@
 @media (max-width: 320px) {
   #rewardtitle h1 {
     font-size: 15px; } }
+@media (max-width: 599px) {
+  #rewardtitle h1 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 3px; } }
 @media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
   #rewardtitle h1 {
     font-size: 45px;
@@ -178,6 +191,10 @@
 @media (max-width: 320px) {
   #rewardtitle h3 {
     margin-top: 2px; } }
+@media (max-width: 599px) {
+  #rewardtitle h3 {
+    margin-top: 3px;
+    margin-bottom: 3px; } }
 @media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
   #rewardtitle h3 {
     font-size: 20px; } }
@@ -204,10 +221,10 @@
   #rewarddetail-mobile > #goal-mobile h4 {
     font-size: 10px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 599px) {
   .carousel-inner > .item > .reward-mobile {
-    width: 200px;
-    height: 200px; } }
+    width: 150px;
+    height: 150px; } }
 @media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
   .carousel-inner > .item > .reward-mobile {
     height: 400px;
@@ -225,6 +242,9 @@
     bottom: -117px; } }
 
 @media (max-width: 320px) {
+  .carousel-caption .number {
+    font-size: 30px; } }
+@media (max-width: 599px) {
   .carousel-caption .number {
     font-size: 30px; } }
 @media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
@@ -251,7 +271,10 @@
 
 @media (max-width: 320px) {
   .round5-mobile {
-    width: 135px; } }
+    width: 128px; } }
+@media (max-width: 599px) {
+  .round5-mobile {
+    width: 128px; } }
 @media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
   .round5-mobile {
     height: 50px;
@@ -269,7 +292,7 @@
 
 @media (max-width: 320px) {
   .round4-mobile {
-    width: 135px; } }
+    width: 120px; } }
 @media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
   .round4-mobile {
     height: 50px;
@@ -287,8 +310,11 @@
 
 @media (max-width: 320px) {
   .round3-mobile {
-    width: 135px;
+    width: 128px;
     padding-right: 8px; } }
+@media (max-width: 599px) {
+  .round3-mobile {
+    width: 130px; } }
 @media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
   .round3-mobile {
     height: 50px;
@@ -317,20 +343,25 @@
   .multilinecaption {
     bottom: -170px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 599px) {
   .round2-mobile {
-    width: 135px;
-    padding-right: 8px; } }
+    width: 128px;
+    padding-right: 8px;
+    top: 55%; } }
 
 @media (max-width: 320px) {
   .landscaperewardcaption {
-    bottom: -70px; } }
+    bottom: -65px; } }
 @media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
   .landscaperewardcaption {
     bottom: -15px; } }
 @media (min-width: 900px) and (max-width: 1199px) and (orientation: portrait) {
   .landscaperewardcaption {
     bottom: 20px; } }
+
+@media (max-width: 599px) {
+  .landscaperewardcaption2 {
+    bottom: -85px; } }
 
 @media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
   .round2-mobile {
@@ -368,6 +399,10 @@
   .carousel-inner > .item > .biggest > img {
     padding-top: 40px; } }
 
+@media (max-width: 599px) {
+  #specialrewarddetail-mobile h2 {
+    margin-top: -5px;
+    font-size: 15px; } }
 @media (min-width: 600px) and (max-width: 899px) and (orientation: portrait) {
   #specialrewarddetail-mobile h2 {
     font-size: 40px; } }

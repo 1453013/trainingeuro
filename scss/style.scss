@@ -1,51 +1,8 @@
-@mixin for-phone-only {
-  @media (max-width: 599px) { @content; }
-}
-@mixin for-tablet-portrait-up {
-  @media (min-width: 600px) { @content; }
-}
-@mixin for-snakktablet-portrait-only {
-  @media (min-width: 600px) and (max-width: 899px)  and (orientation: portrait) { @content; }
-}
-@mixin for-tablet-landscape-up {
-  @media (min-width: 900px) { @content; }
-}
-@mixin for-tablet-landscape-only {
-  @media (min-width: 900px) and (max-width: 1199px)  and (orientation: landscape) { @content; }
-}
-@mixin for-tablet-portrait-only {
-  @media (min-width: 900px) and (max-width: 1199px)  and (orientation: portrait) { @content; }
-}
-
-@mixin for-bigtablet-landscape-only {
-  @media (min-width: 1200px) and (max-width: 1800px)  and (orientation: landscape) { @content; }
-}
-
-@mixin for-desktop-up {
-  @media (min-width: 1200px) { @content; }
-}
-@mixin for-desktop-only {
-  @media (min-width: 1200px) and (max-width: 1799px) { @content; }
-}
-@mixin for-big-desktop-up {
-  @media (min-width: 1800px) { @content; }
-}
-
-@mixin for-iphone5 {
-  @media (max-width: 320px) { @content; }
-}
-
-@mixin for-slider{
-  @media (min-width: 320px) and (max-width: 1199px) and (orientation: portrait) {@content;}
-}
-
-@mixin for-display{
-  @media ( min-width: 800px) and (orientation: landscape) { @content; }
-}
+@import 'mixin';
 
 
 #section0 {
-  
+
 }
 
 #fanall {
@@ -77,10 +34,10 @@
 
 
 #section0 {
-  
-  
 
-  @include for-phone-only { 
+
+
+  @include for-phone-only {
     background-image: url(../images/bg-mobile/bg-1.jpg);
   }
   @include for-tablet-portrait-up {
@@ -89,10 +46,10 @@
     background-position: center center;
   }
 
-  @include for-tablet-landscape-up {     
-    background-image: url(../images/bg/bg-1.jpg);     
-    background-size: cover;     
-    background-position: center center;   
+  @include for-tablet-landscape-up {
+    background-image: url(../images/bg/bg-1.jpg);
+    background-size: cover;
+    background-position: center center;
   }
 
 
@@ -220,14 +177,14 @@
       display: block;
     }
     img{
-      width: 300px;
+      width: 210px;
       height: auto;
     }
     h1 {
-
-      font-size: 20px;
+      font-size: 17px;
       margin-top: 15px;
       margin-bottom: 5px;
+      white-space: nowrap;
     }
     h3 {
       margin-top: 8px;
@@ -235,12 +192,20 @@
       line-height: 20px;
     }
   }
-
+  @include for-phone-only {
+    img {
+      width: 270px;
+    }
+    h1 {
+      white-space: nowrap;
+    }
+  }
   @include for-snakktablet-portrait-only {
 
     h1 {
       font-size: 37px;
       margin-bottom: 5px;
+      white-space: nowrap;
     }
     h3 {
       line-height: 32px;
@@ -256,6 +221,7 @@
     h1 {
       font-size: 60px;
       margin-bottom: 5px;
+      white-space: nowrap;
     }
     h3 {
       font-size: 50px;
@@ -295,7 +261,7 @@
 
 #rewarddetail-mobile {
    @include for-slider {
-    display: block; 
+    display: block;
    }
 }
 
@@ -305,6 +271,12 @@
 #rewardtitle h1 {
   @include for-iphone5 {
     font-size: 15px;
+  }
+  @include for-phone-only {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+
   }
   @include for-tablet-landscape-only {
     font-size: 45px;
@@ -317,6 +289,10 @@
 #rewardtitle h3 {
   @include for-iphone5 {
     margin-top: 2px;
+  }
+  @include for-phone-only{
+    margin-top: 3px;
+    margin-bottom: 3px;
   }
    @include for-tablet-landscape-only {
     font-size: 20px;
@@ -353,13 +329,13 @@
   @include for-iphone5 {
     font-size: 10px;
   }
-  
+
 }
 
 .carousel-inner > .item > .reward-mobile {
-  @include for-iphone5 {
-    width: 200px;
-    height: 200px;
+  @include for-phone-only {
+    width: 150px;
+    height: 150px;
   }
 
   @include for-snakktablet-portrait-only {
@@ -381,11 +357,14 @@
   @include for-tablet-portrait-only {
     bottom: -117px;
   }
-   
+
 }
 
 .carousel-caption .number {
   @include for-iphone5 {
+    font-size: 30px;
+  }
+  @include for-phone-only{
     font-size: 30px;
   }
   @include for-snakktablet-portrait-only {
@@ -400,7 +379,7 @@
 .carousel-caption .type {
   @include for-snakktablet-portrait-only {
     font-size: 20px;
-  } 
+  }
   @include for-tablet-portrait-only {
     font-size: 30px;
   }
@@ -409,7 +388,7 @@
 .carousel-caption .model {
   @include for-snakktablet-portrait-only {
     font-size: 20px;
-  } 
+  }
   @include for-tablet-portrait-only {
     font-size: 30px;
     white-space: nowrap;
@@ -421,7 +400,10 @@
 
 .round5-mobile {
   @include for-iphone5 {
-    width: 135px;
+    width: 128px;
+  }
+  @include for-phone-only {
+    width: 128px;
   }
   @include for-snakktablet-portrait-only {
     height: 50px;
@@ -431,7 +413,7 @@
     padding-top: 5px;
   }
   @include for-tablet-portrait-only {
-    height: 60px;  
+    height: 60px;
     width: 300px;
     font-size: 30px;
     padding-right: 30px;
@@ -442,7 +424,7 @@
 
 .round4-mobile {
   @include for-iphone5 {
-    width: 135px;
+    width: 120px;
   }
   @include for-snakktablet-portrait-only {
     height: 50px;
@@ -452,7 +434,7 @@
     padding-top: 5px;
   }
   @include for-tablet-portrait-only {
-    height: 60px;  
+    height: 60px;
     width: 280px;
     font-size: 30px;
     padding-right: 30px;
@@ -463,8 +445,11 @@
 
 .round3-mobile {
   @include for-iphone5 {
-    width: 135px;
+    width: 128px;
     padding-right: 8px;
+  }
+  @include for-phone-only {
+    width: 130px;
   }
   @include for-snakktablet-portrait-only {
     height: 50px;
@@ -474,7 +459,7 @@
     padding-top: 5px;
   }
   @include for-tablet-portrait-only {
-    height: 60px;  
+    height: 60px;
     width: 280px;
     font-size: 30px;
     padding-right: 30px;
@@ -505,15 +490,16 @@
 
 
 .round2-mobile {
-  @include for-iphone5 {
-    width: 135px;
+  @include for-phone-only {
+    width: 128px;
     padding-right: 8px;
+    top: 55%;
   }
 }
 
 .landscaperewardcaption {
   @include for-iphone5 {
-    bottom: -70px;
+    bottom: -65px;
   }
   @include for-snakktablet-portrait-only {
     bottom: -15px;
@@ -523,6 +509,11 @@
   }
 }
 
+.landscaperewardcaption2 {
+  @include for-phone-only {
+    bottom: -85px;
+    }
+}
 
 
 .round2-mobile {
@@ -576,6 +567,12 @@
 
 
 #specialrewarddetail-mobile h2 {
+
+@include for-phone-only {
+  margin-top: -5px;
+  font-size: 15px;
+}
+
 @include for-snakktablet-portrait-only {
     font-size: 40px;
   }
