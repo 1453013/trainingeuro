@@ -173,7 +173,9 @@
 
 @media (min-width: 320px) and (max-width: 1199px) and (orientation: portrait) {
   #rewarddetail-mobile {
-    display: block; } }
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 @media (max-width: 320px) {
   #rewardtitle h1 {

@@ -452,6 +452,9 @@ html {
   width: 100%;
   height: auto; }
 
+.carousel-control.left, .carousel-control.right {
+  background-image: none !important; }
+
 /*.carousel-inner >.item {
 	transition: 3s;
 	}*/

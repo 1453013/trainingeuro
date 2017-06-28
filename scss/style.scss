@@ -262,6 +262,8 @@
 #rewarddetail-mobile {
    @include for-slider {
     display: block;
+    padding-left: 15px;
+    padding-right: 15px;
    }
 }
 
